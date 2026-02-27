@@ -1,0 +1,13 @@
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\bin\Debug\ConsultorioMedico.exe.config
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\bin\Debug\ConsultorioMedico.exe
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\bin\Debug\ConsultorioMedico.pdb
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.csproj.AssemblyReference.cache
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmClientes.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmMedicos.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmMenu.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmPacientes.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.Properties.Resources.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.csproj.GenerateResource.cache
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.csproj.CoreCompileInputs.cache
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.exe
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.pdb
