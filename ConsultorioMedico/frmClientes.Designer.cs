@@ -33,7 +33,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sistemaMedicoDataSet1 = new ConsultorioMedico.SistemaMedicoDataSet1();
             this.txtDomFiscal = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,11 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rFCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreContriDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domFiscalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cdmModificar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
@@ -63,13 +57,23 @@
             this.cmdUltimo = new System.Windows.Forms.Button();
             this.cmdSiguiente = new System.Windows.Forms.Button();
             this.cmdAnterior = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.sistemaMedicoDataSet1 = new ConsultorioMedico.SistemaMedicoDataSet1();
+            this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter = new ConsultorioMedico.SistemaMedicoDataSet1TableAdapters.ClienteTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaMedicoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaMedicoDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -94,7 +98,8 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "email", true));
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "email", true));
+            this.txtEmail.Enabled = false;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(189, 330);
             this.txtEmail.Name = "txtEmail";
@@ -104,16 +109,11 @@
             // clienteBindingSource
             // 
             this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.sistemaMedicoDataSet1;
-            // 
-            // sistemaMedicoDataSet1
-            // 
-            this.sistemaMedicoDataSet1.DataSetName = "SistemaMedicoDataSet1";
-            this.sistemaMedicoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtDomFiscal
             // 
-            this.txtDomFiscal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "domFiscal", true));
+            this.txtDomFiscal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "domFiscal", true));
+            this.txtDomFiscal.Enabled = false;
             this.txtDomFiscal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomFiscal.Location = new System.Drawing.Point(189, 266);
             this.txtDomFiscal.Name = "txtDomFiscal";
@@ -159,7 +159,8 @@
             // 
             // txtNombreContri
             // 
-            this.txtNombreContri.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "nombreContri", true));
+            this.txtNombreContri.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "nombreContri", true));
+            this.txtNombreContri.Enabled = false;
             this.txtNombreContri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreContri.Location = new System.Drawing.Point(187, 182);
             this.txtNombreContri.Name = "txtNombreContri";
@@ -178,7 +179,8 @@
             // 
             // txtRFC
             // 
-            this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "RFC", true));
+            this.txtRFC.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "RFC", true));
+            this.txtRFC.Enabled = false;
             this.txtRFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRFC.Location = new System.Drawing.Point(187, 98);
             this.txtRFC.Name = "txtRFC";
@@ -197,8 +199,8 @@
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.clienteBindingSource, "idCliente", true));
-            this.txtIdCliente.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "idCliente", true));
+            this.txtIdCliente.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.clienteBindingSource1, "idCliente", true));
+            this.txtIdCliente.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "idCliente", true));
             this.txtIdCliente.Enabled = false;
             this.txtIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCliente.Location = new System.Drawing.Point(187, 25);
@@ -260,59 +262,18 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idClienteDataGridViewTextBoxColumn,
-            this.rFCDataGridViewTextBoxColumn,
-            this.nombreContriDataGridViewTextBoxColumn,
-            this.domFiscalDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clienteBindingSource;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.dataGridView1.DataSource = this.clienteBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(215, 550);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1260, 278);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // idClienteDataGridViewTextBoxColumn
-            // 
-            this.idClienteDataGridViewTextBoxColumn.DataPropertyName = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idClienteDataGridViewTextBoxColumn.Name = "idClienteDataGridViewTextBoxColumn";
-            this.idClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idClienteDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // rFCDataGridViewTextBoxColumn
-            // 
-            this.rFCDataGridViewTextBoxColumn.DataPropertyName = "RFC";
-            this.rFCDataGridViewTextBoxColumn.HeaderText = "RFC";
-            this.rFCDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.rFCDataGridViewTextBoxColumn.Name = "rFCDataGridViewTextBoxColumn";
-            this.rFCDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nombreContriDataGridViewTextBoxColumn
-            // 
-            this.nombreContriDataGridViewTextBoxColumn.DataPropertyName = "nombreContri";
-            this.nombreContriDataGridViewTextBoxColumn.HeaderText = "nombreContri";
-            this.nombreContriDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nombreContriDataGridViewTextBoxColumn.Name = "nombreContriDataGridViewTextBoxColumn";
-            this.nombreContriDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // domFiscalDataGridViewTextBoxColumn
-            // 
-            this.domFiscalDataGridViewTextBoxColumn.DataPropertyName = "domFiscal";
-            this.domFiscalDataGridViewTextBoxColumn.HeaderText = "domFiscal";
-            this.domFiscalDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.domFiscalDataGridViewTextBoxColumn.Name = "domFiscalDataGridViewTextBoxColumn";
-            this.domFiscalDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 150;
             // 
             // cmdSalir
             // 
@@ -329,7 +290,6 @@
             // cdmModificar
             // 
             this.cdmModificar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.cdmModificar.Enabled = false;
             this.cdmModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cdmModificar.Location = new System.Drawing.Point(1191, 872);
             this.cdmModificar.Name = "cdmModificar";
@@ -412,16 +372,88 @@
             this.cmdAnterior.UseVisualStyleBackColor = false;
             this.cmdAnterior.Click += new System.EventHandler(this.cmdAnterior_Click);
             // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(1349, 466);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(215, 30);
+            this.txtBusqueda.TabIndex = 36;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1218, 456);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 50);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Buscar por\r\nnombre";
+            // 
+            // sistemaMedicoDataSet1
+            // 
+            this.sistemaMedicoDataSet1.DataSetName = "SistemaMedicoDataSet1";
+            this.sistemaMedicoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource1
+            // 
+            this.clienteBindingSource1.DataMember = "Cliente";
+            this.clienteBindingSource1.DataSource = this.sistemaMedicoDataSet1;
+            // 
             // clienteTableAdapter
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "idCliente";
+            this.dataGridViewTextBoxColumn1.HeaderText = "idCliente";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "RFC";
+            this.dataGridViewTextBoxColumn2.HeaderText = "RFC";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "nombreContri";
+            this.dataGridViewTextBoxColumn3.HeaderText = "nombreContri";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "domFiscal";
+            this.dataGridViewTextBoxColumn4.HeaderText = "domFiscal";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "email";
+            this.dataGridViewTextBoxColumn5.HeaderText = "email";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1678, 962);
+            this.ClientSize = new System.Drawing.Size(1681, 970);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cdmModificar);
             this.Controls.Add(this.cmdGrabar);
@@ -443,10 +475,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaMedicoDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaMedicoDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,13 +513,23 @@
         private System.Windows.Forms.Button cmdUltimo;
         private System.Windows.Forms.Button cmdSiguiente;
         private System.Windows.Forms.Button cmdAnterior;
-        private SistemaMedicoDataSet1 sistemaMedicoDataSet1;
+      
         private System.Windows.Forms.BindingSource clienteBindingSource;
-        private SistemaMedicoDataSet1TableAdapters.ClienteTableAdapter clienteTableAdapter;
+       
         private System.Windows.Forms.DataGridViewTextBoxColumn idClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rFCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreContriDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn domFiscalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Label label8;
+        private SistemaMedicoDataSet1 sistemaMedicoDataSet1;
+        private System.Windows.Forms.BindingSource clienteBindingSource1;
+        private SistemaMedicoDataSet1TableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

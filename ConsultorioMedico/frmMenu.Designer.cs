@@ -34,6 +34,8 @@
             this.pACIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mEDICOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mOVIMIENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cITASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cATALOGOSToolStripMenuItem});
+            this.cATALOGOSToolStripMenuItem,
+            this.mOVIMIENTOSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(975, 33);
@@ -62,23 +65,38 @@
             // pACIENTESToolStripMenuItem
             // 
             this.pACIENTESToolStripMenuItem.Name = "pACIENTESToolStripMenuItem";
-            this.pACIENTESToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
+            this.pACIENTESToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.pACIENTESToolStripMenuItem.Text = "PACIENTES";
             this.pACIENTESToolStripMenuItem.Click += new System.EventHandler(this.pACIENTESToolStripMenuItem_Click);
             // 
             // cLIENTESToolStripMenuItem
             // 
             this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
-            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
             this.cLIENTESToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESToolStripMenuItem_Click);
             // 
             // mEDICOSToolStripMenuItem
             // 
             this.mEDICOSToolStripMenuItem.Name = "mEDICOSToolStripMenuItem";
-            this.mEDICOSToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
-            this.mEDICOSToolStripMenuItem.Text = "MEDICOS";
+            this.mEDICOSToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.mEDICOSToolStripMenuItem.Text = "MÉDICOS";
             this.mEDICOSToolStripMenuItem.Click += new System.EventHandler(this.mEDICOSToolStripMenuItem_Click);
+            // 
+            // mOVIMIENTOSToolStripMenuItem
+            // 
+            this.mOVIMIENTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cITASToolStripMenuItem});
+            this.mOVIMIENTOSToolStripMenuItem.Name = "mOVIMIENTOSToolStripMenuItem";
+            this.mOVIMIENTOSToolStripMenuItem.Size = new System.Drawing.Size(149, 29);
+            this.mOVIMIENTOSToolStripMenuItem.Text = "MOVIMIENTOS";
+            // 
+            // cITASToolStripMenuItem
+            // 
+            this.cITASToolStripMenuItem.Name = "cITASToolStripMenuItem";
+            this.cITASToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cITASToolStripMenuItem.Text = "CITAS";
+            this.cITASToolStripMenuItem.Click += new System.EventHandler(this.cITASToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -108,6 +126,8 @@
         private System.Windows.Forms.ToolStripMenuItem pACIENTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mEDICOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mOVIMIENTOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cITASToolStripMenuItem;
     }
 }
 

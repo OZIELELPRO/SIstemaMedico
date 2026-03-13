@@ -20,8 +20,8 @@ namespace ConsultorioMedico
 
         private void frmMedicos_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'sistemaMedicoDataSet2.Medico' Puede moverla o quitarla según sea necesario.
-            this.medicoTableAdapter.Fill(this.sistemaMedicoDataSet2.Medico);
+            // TODO: esta línea de código carga datos en la tabla 'sistemaMedicoDataSet3.Medico' Puede moverla o quitarla según sea necesario.
+            this.medicoTableAdapter.Fill(this.sistemaMedicoDataSet3.Medico);
 
         }
 
@@ -62,9 +62,8 @@ namespace ConsultorioMedico
         {
             this.Validate();
             medicoBindingSource.EndEdit();
-            medicoTableAdapter.Update(sistemaMedicoDataSet2.Medico);
+            medicoTableAdapter.Update(sistemaMedicoDataSet3.Medico);
             MessageBox.Show("Registro guardado correctamente.");
-
             txtIdMedico.Enabled = false;
             txtNombre.Enabled = false;
             txtCedula.Enabled = false;
@@ -84,6 +83,11 @@ namespace ConsultorioMedico
             mskTelefono.Enabled = true;
             cmdGrabar.Enabled = true;
             cdmModificar.Enabled = false;
+        }
+
+        private void cmdSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

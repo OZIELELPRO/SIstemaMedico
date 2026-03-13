@@ -47,5 +47,11 @@ namespace ConsultorioMedico
         {
 
         }
+
+        private void cITASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCItas frmCItas = new frmCItas();
+            frmCItas.Show();
+        }
     }
 }

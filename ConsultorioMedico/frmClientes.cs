@@ -22,27 +22,27 @@ namespace ConsultorioMedico
         {
             // TODO: esta línea de código carga datos en la tabla 'sistemaMedicoDataSet1.Cliente' Puede moverla o quitarla según sea necesario.
             this.clienteTableAdapter.Fill(this.sistemaMedicoDataSet1.Cliente);
-
+           
         }
 
         private void cmdAnterior_Click(object sender, EventArgs e)
         {
-            clienteBindingSource.MovePrevious();
+            clienteBindingSource1.MovePrevious();
         }
 
         private void cmdSiguiente_Click(object sender, EventArgs e)
         {
-            clienteBindingSource.MoveNext();
+            clienteBindingSource1.MoveNext();
         }
 
         private void cmdUltimo_Click(object sender, EventArgs e)
         {
-            clienteBindingSource.MoveLast();
+            clienteBindingSource1.MoveLast();
         }
 
         private void cmdPrimero_Click(object sender, EventArgs e)
         {
-            clienteBindingSource.MoveFirst();
+            clienteBindingSource1.MoveFirst();
         }
 
         private void cmdNuevo_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace ConsultorioMedico
             txtNombreContri.Enabled = true;
             txtDomFiscal.Enabled = true;
             txtEmail.Enabled = true;
-            clienteBindingSource.AddNew();
+            clienteBindingSource1.AddNew();
             cmdNuevo.Enabled = false;
             cmdGrabar.Enabled = true;
             cdmModificar.Enabled = false;
@@ -61,7 +61,7 @@ namespace ConsultorioMedico
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
             this.Validate();
-            clienteBindingSource.EndEdit();
+            clienteBindingSource1.EndEdit();
             clienteTableAdapter.Update(sistemaMedicoDataSet1.Cliente);
             MessageBox.Show("Registro guardado correctamente.");
             txtIdCliente.Enabled = false;
@@ -88,6 +88,12 @@ namespace ConsultorioMedico
         private void cmdSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            clienteBindingSource1.Filter =
+        $"nombreContri LIKE '%{txtBusqueda.Text}%'";
         }
     }
 }

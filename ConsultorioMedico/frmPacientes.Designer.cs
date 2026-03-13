@@ -47,6 +47,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.txtEnfermedades = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtAlergias = new System.Windows.Forms.TextBox();
@@ -68,6 +69,7 @@
             this.alergiasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enfermedadCroniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pacienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cmdAnterior = new System.Windows.Forms.Button();
             this.cmdSiguiente = new System.Windows.Forms.Button();
             this.cmdUltimo = new System.Windows.Forms.Button();
@@ -76,6 +78,8 @@
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.cmdModificar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pacienteTableAdapter = new ConsultorioMedico.SistemaMedicoDataSetTableAdapters.PacienteTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -83,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sistemaMedicoDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,7 +133,6 @@
             // txtIdPaciente
             // 
             this.txtIdPaciente.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pacienteBindingSource, "idPaciente", true));
-            this.txtIdPaciente.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.pacienteBindingSource, "idPaciente", true));
             this.txtIdPaciente.Enabled = false;
             this.txtIdPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdPaciente.Location = new System.Drawing.Point(159, 25);
@@ -236,6 +240,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtBusqueda);
             this.groupBox1.Controls.Add(this.txtEnfermedades);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtAlergias);
@@ -262,6 +267,14 @@
             this.groupBox1.Size = new System.Drawing.Size(1051, 489);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(1132, 389);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(215, 30);
+            this.txtBusqueda.TabIndex = 36;
             // 
             // txtEnfermedades
             // 
@@ -591,6 +604,25 @@
             this.cmdSalir.UseVisualStyleBackColor = false;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1448, 434);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(116, 50);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Buscar por\r\nnombre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1393, 493);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 30);
+            this.textBox1.TabIndex = 38;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // pacienteTableAdapter
             // 
             this.pacienteTableAdapter.ClearBeforeFill = true;
@@ -600,9 +632,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1678, 991);
+            this.ClientSize = new System.Drawing.Size(1686, 1001);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdModificar);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmdNuevo);
             this.Controls.Add(this.cmdPrimero);
@@ -625,6 +659,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -658,6 +693,18 @@
         private System.Windows.Forms.TextBox txtAlergias;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button cmdAnterior;
+        private System.Windows.Forms.Button cmdSiguiente;
+        private System.Windows.Forms.Button cmdUltimo;
+        private System.Windows.Forms.Button cmdPrimero;
+        private System.Windows.Forms.Button cmdNuevo;
+        private System.Windows.Forms.Button cmdGrabar;
+        private System.Windows.Forms.Button cmdModificar;
+        private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.BindingSource pacienteBindingSource1;
         private SistemaMedicoDataSet sistemaMedicoDataSet;
         private System.Windows.Forms.BindingSource pacienteBindingSource;
         private SistemaMedicoDataSetTableAdapters.PacienteTableAdapter pacienteTableAdapter;
@@ -671,13 +718,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn alergiasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn enfermedadCroniDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button cmdAnterior;
-        private System.Windows.Forms.Button cmdSiguiente;
-        private System.Windows.Forms.Button cmdUltimo;
-        private System.Windows.Forms.Button cmdPrimero;
-        private System.Windows.Forms.Button cmdNuevo;
-        private System.Windows.Forms.Button cmdGrabar;
-        private System.Windows.Forms.Button cmdModificar;
-        private System.Windows.Forms.Button cmdSalir;
     }
 }

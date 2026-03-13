@@ -64,6 +64,7 @@ namespace ConsultorioMedico
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
+            
             this.Validate();
             pacienteBindingSource.EndEdit();
             pacienteTableAdapter.Update(sistemaMedicoDataSet.Paciente);
@@ -81,6 +82,7 @@ namespace ConsultorioMedico
             cmdGrabar.Enabled = false;
             cmdModificar.Enabled = true;
             cboSangre.Enabled = false;
+      
         }
 
         private void cmdModificar_Click(object sender, EventArgs e)
@@ -102,6 +104,12 @@ namespace ConsultorioMedico
         private void cmdSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            pacienteBindingSource.Filter =
+        $"Nombre LIKE '%{textBox1.Text}%'";
         }
     }
 }
