@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCItas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,17 +51,22 @@
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.cmdCancelarCita = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboIdCancelacion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -160,14 +165,14 @@
             // 
             this.dgvDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(241)))), ((int)(((byte)(248)))));
             this.dgvDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdCita,
@@ -246,6 +251,7 @@
             this.cmdSalir.TabIndex = 51;
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = false;
+            this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
             // cmdCancelar
             // 
@@ -287,6 +293,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del paciente";
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(439, 25);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(186, 26);
+            this.txtId.TabIndex = 52;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(402, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 25);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "ID";
+            // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(277, 211);
@@ -321,28 +344,56 @@
             this.label5.TabIndex = 47;
             this.label5.Text = "Apellidos del Paciente";
             // 
-            // label7
+            // cmdCancelarCita
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(402, 25);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 25);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "ID";
+            this.cmdCancelarCita.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelarCita.Location = new System.Drawing.Point(45, 134);
+            this.cmdCancelarCita.Name = "cmdCancelarCita";
+            this.cmdCancelarCita.Size = new System.Drawing.Size(147, 84);
+            this.cmdCancelarCita.TabIndex = 53;
+            this.cmdCancelarCita.Text = "Cancelar Cita";
+            this.cmdCancelarCita.UseVisualStyleBackColor = false;
+            this.cmdCancelarCita.Click += new System.EventHandler(this.cmdCancelarCita_Click);
             // 
-            // txtId
+            // groupBox3
             // 
-            this.txtId.Location = new System.Drawing.Point(439, 25);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(186, 26);
-            this.txtId.TabIndex = 52;
+            this.groupBox3.Controls.Add(this.cboIdCancelacion);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.cmdCancelarCita);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(1431, 416);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(235, 224);
+            this.groupBox3.TabIndex = 54;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Seleccione Id de cita a cancelar";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(23, 78);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(31, 25);
+            this.label8.TabIndex = 54;
+            this.label8.Text = "ID";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // cboIdCancelacion
+            // 
+            this.cboIdCancelacion.FormattingEnabled = true;
+            this.cboIdCancelacion.Location = new System.Drawing.Point(63, 70);
+            this.cboIdCancelacion.Name = "cboIdCancelacion";
+            this.cboIdCancelacion.Size = new System.Drawing.Size(129, 33);
+            this.cboIdCancelacion.TabIndex = 55;
             // 
             // frmCItas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1678, 994);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdCancelar);
@@ -362,6 +413,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,5 +449,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button cmdCancelarCita;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cboIdCancelacion;
     }
 }

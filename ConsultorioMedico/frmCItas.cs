@@ -23,17 +23,15 @@ namespace ConsultorioMedico
         private void cmdBuscar_Click(object sender, EventArgs e)
         {
             dgvDatos.Rows.Clear();
-
+            cboIdCancelacion.Items.Clear();
             string paciente = cboPacientes.Text;
             string fecha = dtpFecha.Value.ToString("yyyy-MM-dd");
 
             conexion.Open();
             comando = conexion.CreateCommand();
 
-            comando.CommandText = "SELECT * FROM Citas c " +
-                                  "INNER JOIN Paciente p ON c.idPaciente = p.idPaciente " +
-                                  "WHERE p.Nombre = '" + paciente + "' AND CONVERT(date,c.fecha) = '" + fecha + "'";
-
+            comando.CommandText = "SELECT * FROM Citas " +
+                      "WHERE CONVERT(date,fecha) = '" + fecha + "'";
             SqlDataReader lector = comando.ExecuteReader();
 
             while (lector.Read())
@@ -45,6 +43,11 @@ namespace ConsultorioMedico
                     lector.GetValue(4),
                     lector.GetValue(3)
                 );
+
+                if (lector["estado"].ToString() == "R")
+                {
+                    cboIdCancelacion.Items.Add(lector["idCita"].ToString());
+                }
             }
 
             lector.Close();
@@ -58,16 +61,20 @@ namespace ConsultorioMedico
 
                 for (int i = 0; i < dgvDatos.Rows.Count - 1; i++)
                 {
-                    int horaBD = Convert.ToInt32(dgvDatos.Rows[i].Cells[3].Value);
-
-                    if (horaBD == hora && dgvDatos.Rows[i].Cells[5].Value.ToString() == "C")
+                    if (dgvDatos.Rows[i].Cells[3].Value != null)
                     {
-                        ocupado = true;
-                        break;
+                        TimeSpan horaBD = (TimeSpan)dgvDatos.Rows[i].Cells[3].Value;
+                        int horaExtraida = horaBD.Hours;
+
+                        if (horaExtraida == hora && dgvDatos.Rows[i].Cells[4].Value.ToString() == "R")
+                        {
+                            ocupado = true;
+                            break;
+                        }
                     }
                 }
 
-                if (ocupado == false)
+                if (!ocupado)
                 {
                     cboHora.Items.Add(hora + ":00");
                 }
@@ -95,6 +102,7 @@ namespace ConsultorioMedico
 
 
 
+
         }
 
         private void cmdGrabar_Click(object sender, EventArgs e)
@@ -107,7 +115,16 @@ namespace ConsultorioMedico
             conexion.Open();
             comando = conexion.CreateCommand();
 
-           
+            string consultaValidar = $"SELECT COUNT(*) FROM Citas WHERE Fecha = '{fecha}' AND Hora = '{hora}' AND Estado = 'R'";
+            comando.CommandText = consultaValidar;
+            int existeCita = Convert.ToInt32(comando.ExecuteScalar());
+
+            if (existeCita > 0)
+            {
+                MessageBox.Show("Cita ocupada. Por favor elija otro horario.");
+                conexion.Close();
+                return;
+            }
 
             // Insertar la cita
             comando.CommandText = "INSERT INTO Citas (idPaciente, fecha, hora, estado) " +
@@ -117,6 +134,8 @@ namespace ConsultorioMedico
             conexion.Close();
 
             MessageBox.Show("Cita registrada");
+
+            cmdBuscar_Click(null, null);
         }
 
         private void cboPacientes_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,6 +161,38 @@ namespace ConsultorioMedico
             }
             lector.Close();
             conexion.Close();
+        }
+
+        private void cmdSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cmdCancelarCita_Click(object sender, EventArgs e)
+        {
+            if (cboIdCancelacion.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor, selecciona un ID de cita para cancelar.");
+                return;
+            }
+
+
+            conexion.Open();
+            string query = "UPDATE Citas SET estado = 'C' WHERE idCita = " + cboIdCancelacion.Text;
+            comando.CommandText = query;
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+            MessageBox.Show("Cita Cancelada, Edo 'C'.");
+            cmdBuscar_Click(null, null);
+
+            cboIdCancelacion.Text = "";
+        }
+            
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
