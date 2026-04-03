@@ -87,6 +87,7 @@ namespace ConsultorioMedico
             conexion.Open();
 
             comando = conexion.CreateCommand();
+
             comando.CommandText = "SELECT Nombre FROM Paciente";
 
             SqlDataReader lector;

@@ -36,6 +36,8 @@
             this.mEDICOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mOVIMIENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cITASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rECETASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,9 @@
             // mOVIMIENTOSToolStripMenuItem
             // 
             this.mOVIMIENTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cITASToolStripMenuItem});
+            this.cITASToolStripMenuItem,
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem,
+            this.rECETASToolStripMenuItem});
             this.mOVIMIENTOSToolStripMenuItem.Name = "mOVIMIENTOSToolStripMenuItem";
             this.mOVIMIENTOSToolStripMenuItem.Size = new System.Drawing.Size(149, 29);
             this.mOVIMIENTOSToolStripMenuItem.Text = "MOVIMIENTOS";
@@ -94,9 +98,23 @@
             // cITASToolStripMenuItem
             // 
             this.cITASToolStripMenuItem.Name = "cITASToolStripMenuItem";
-            this.cITASToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cITASToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
             this.cITASToolStripMenuItem.Text = "CITAS";
             this.cITASToolStripMenuItem.Click += new System.EventHandler(this.cITASToolStripMenuItem_Click);
+            // 
+            // aCTUALIZAREXPEDIENTEToolStripMenuItem
+            // 
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem.Name = "aCTUALIZAREXPEDIENTEToolStripMenuItem";
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem.Text = "ACTUALIZAR EXPEDIENTE";
+            this.aCTUALIZAREXPEDIENTEToolStripMenuItem.Click += new System.EventHandler(this.aCTUALIZAREXPEDIENTEToolStripMenuItem_Click);
+            // 
+            // rECETASToolStripMenuItem
+            // 
+            this.rECETASToolStripMenuItem.Name = "rECETASToolStripMenuItem";
+            this.rECETASToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
+            this.rECETASToolStripMenuItem.Text = "RECETAS";
+            this.rECETASToolStripMenuItem.Click += new System.EventHandler(this.rECETASToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -128,6 +146,8 @@
         private System.Windows.Forms.ToolStripMenuItem mEDICOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mOVIMIENTOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cITASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aCTUALIZAREXPEDIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rECETASToolStripMenuItem;
     }
 }
 
