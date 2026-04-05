@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|c:\\users\\veneg\\source\\repos\\practicancapas\\consultoriomedico\\consultoriomedico\\frmfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|c:\\users\\veneg\\source\\repos\\practicancapas\\consultoriomedico\\consultoriomedico\\frmfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|c:\\users\\veneg\\source\\repos\\practicancapas\\consultoriomedico\\consultoriomedico\\frmcobros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmcobros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|c:\\users\\veneg\\source\\repos\\practicancapas\\consultoriomedico\\consultoriomedico\\frmcobros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmcobros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\consultoriomedico\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|c:\\users\\veneg\\source\\repos\\practicancapas\\consultoriomedico\\consultoriomedico\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\consultoriomedico\\frmrecetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmrecetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\consultoriomedico\\frmrecetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB086C-22A4-4AF3-B742-ECA298926851}|ConsultorioMedico\\ConsultorioMedico.csproj|solutionrelative:consultoriomedico\\frmrecetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmFacturas.cs",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmFacturas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmFacturas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmFacturas.cs",
+              "RelativeToolTip": "ConsultorioMedico\\frmFacturas.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwGoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T04:32:36.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmFacturas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmFacturas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmFacturas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmFacturas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConsultorioMedico\\frmFacturas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T04:29:07.28Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCobros.cs",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCobros.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmCobros.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCobros.cs",
+              "RelativeToolTip": "ConsultorioMedico\\frmCobros.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowEYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T03:52:12.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCobros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCobros.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmCobros.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCobros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConsultorioMedico\\frmCobros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T03:42:46.38Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCItas.cs",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCItas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmCItas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCItas.cs",
+              "RelativeToolTip": "ConsultorioMedico\\frmCItas.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T15:23:56.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmRecetas.cs",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmRecetas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmRecetas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmRecetas.cs",
+              "RelativeToolTip": "ConsultorioMedico\\frmRecetas.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAAKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T13:58:29.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmRecetas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmRecetas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmRecetas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmRecetas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConsultorioMedico\\frmRecetas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T13:58:19.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmCItas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCItas.cs",
+              "RelativeDocumentMoniker": "ConsultorioMedico\\frmCItas.cs",
+              "ToolTip": "C:\\Users\\veneg\\source\\repos\\PracticaNcapas\\ConsultorioMedico\\ConsultorioMedico\\frmCItas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConsultorioMedico\\frmCItas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T19:24:24.483Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

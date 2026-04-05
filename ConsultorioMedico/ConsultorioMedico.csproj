@@ -58,11 +58,23 @@
     <Compile Include="frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobros.Designer.cs">
+      <DependentUpon>frmCobros.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmExpediente.Designer.cs">
       <DependentUpon>frmExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturas.Designer.cs">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMedicos.cs">
       <SubType>Form</SubType>
@@ -116,8 +128,14 @@
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCobros.resx">
+      <DependentUpon>frmCobros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmExpediente.resx">
       <DependentUpon>frmExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturas.resx">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMedicos.resx">
       <DependentUpon>frmMedicos.cs</DependentUpon>

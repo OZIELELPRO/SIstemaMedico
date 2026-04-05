@@ -65,5 +65,17 @@ namespace ConsultorioMedico
             frmRecetas frmRecetas = new frmRecetas();
             frmRecetas.Show();
         }
+
+        private void cOBROSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCobros frmCobros = new frmCobros();
+            frmCobros.Show();
+        }
+
+        private void fACTURASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FACTURAS frmFacturas = new FACTURAS();
+            frmFacturas.Show();
+        }
     }
 }

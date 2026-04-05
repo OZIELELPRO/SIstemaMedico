@@ -38,6 +38,8 @@
             this.cITASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCTUALIZAREXPEDIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rECETASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOBROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,21 +69,21 @@
             // pACIENTESToolStripMenuItem
             // 
             this.pACIENTESToolStripMenuItem.Name = "pACIENTESToolStripMenuItem";
-            this.pACIENTESToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pACIENTESToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
             this.pACIENTESToolStripMenuItem.Text = "PACIENTES";
             this.pACIENTESToolStripMenuItem.Click += new System.EventHandler(this.pACIENTESToolStripMenuItem_Click);
             // 
             // cLIENTESToolStripMenuItem
             // 
             this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
-            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
             this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
             this.cLIENTESToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESToolStripMenuItem_Click);
             // 
             // mEDICOSToolStripMenuItem
             // 
             this.mEDICOSToolStripMenuItem.Name = "mEDICOSToolStripMenuItem";
-            this.mEDICOSToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.mEDICOSToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
             this.mEDICOSToolStripMenuItem.Text = "MÉDICOS";
             this.mEDICOSToolStripMenuItem.Click += new System.EventHandler(this.mEDICOSToolStripMenuItem_Click);
             // 
@@ -90,7 +92,9 @@
             this.mOVIMIENTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cITASToolStripMenuItem,
             this.aCTUALIZAREXPEDIENTEToolStripMenuItem,
-            this.rECETASToolStripMenuItem});
+            this.rECETASToolStripMenuItem,
+            this.cOBROSToolStripMenuItem,
+            this.fACTURASToolStripMenuItem});
             this.mOVIMIENTOSToolStripMenuItem.Name = "mOVIMIENTOSToolStripMenuItem";
             this.mOVIMIENTOSToolStripMenuItem.Size = new System.Drawing.Size(149, 29);
             this.mOVIMIENTOSToolStripMenuItem.Text = "MOVIMIENTOS";
@@ -115,6 +119,20 @@
             this.rECETASToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
             this.rECETASToolStripMenuItem.Text = "RECETAS";
             this.rECETASToolStripMenuItem.Click += new System.EventHandler(this.rECETASToolStripMenuItem_Click);
+            // 
+            // cOBROSToolStripMenuItem
+            // 
+            this.cOBROSToolStripMenuItem.Name = "cOBROSToolStripMenuItem";
+            this.cOBROSToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
+            this.cOBROSToolStripMenuItem.Text = "COBROS";
+            this.cOBROSToolStripMenuItem.Click += new System.EventHandler(this.cOBROSToolStripMenuItem_Click);
+            // 
+            // fACTURASToolStripMenuItem
+            // 
+            this.fACTURASToolStripMenuItem.Name = "fACTURASToolStripMenuItem";
+            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(318, 34);
+            this.fACTURASToolStripMenuItem.Text = "FACTURAS";
+            this.fACTURASToolStripMenuItem.Click += new System.EventHandler(this.fACTURASToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -148,6 +166,8 @@
         private System.Windows.Forms.ToolStripMenuItem cITASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aCTUALIZAREXPEDIENTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rECETASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOBROSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fACTURASToolStripMenuItem;
     }
 }
 

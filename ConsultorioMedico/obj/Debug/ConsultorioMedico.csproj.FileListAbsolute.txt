@@ -14,3 +14,5 @@ C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\o
 C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmCItas.resources
 C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmExpediente.resources
 C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmRecetas.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmCobros.resources
+C:\Users\veneg\source\repos\PracticaNcapas\ConsultorioMedico\ConsultorioMedico\obj\Debug\ConsultorioMedico.FACTURAS.resources
