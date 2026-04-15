@@ -77,5 +77,23 @@ namespace ConsultorioMedico
             FACTURAS frmFacturas = new FACTURAS();
             frmFacturas.Show();
         }
+
+        private void consultasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultas frmConsultas = new frmConsultas();
+            frmConsultas.Show();
+        }
+
+        private void cONSULTACOBROSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaCobros frmConsultaCobros = new frmConsultaCobros();
+            frmConsultaCobros.Show();
+        }
+
+        private void cONSULTASFACTURASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaFacturas frmConsultaFacturas = new frmConsultaFacturas();
+            frmConsultaFacturas.Show();
+        }
     }
 }

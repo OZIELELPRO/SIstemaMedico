@@ -64,6 +64,24 @@
     <Compile Include="frmCobros.Designer.cs">
       <DependentUpon>frmCobros.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCobros.Designer.cs">
+      <DependentUpon>frmConsultaCobros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaFacturas.Designer.cs">
+      <DependentUpon>frmConsultaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +148,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCobros.resx">
       <DependentUpon>frmCobros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCobros.resx">
+      <DependentUpon>frmConsultaCobros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaFacturas.resx">
+      <DependentUpon>frmConsultaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmExpediente.resx">
       <DependentUpon>frmExpediente.cs</DependentUpon>

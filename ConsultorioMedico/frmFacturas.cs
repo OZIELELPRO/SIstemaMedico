@@ -22,62 +22,10 @@ namespace ConsultorioMedico
 
         private void dtpFecha_ValueChanged(object sender, EventArgs e)
         {
-            cboHora.Enabled = true;
-            cboHora.Items.Clear();
-            cboHora.Text = "";
-
-            string fecha = dtpFecha.Value.ToString("yyyy-MM-dd");
-
-            conexion.Open();
-            comando = conexion.CreateCommand();
-            comando.CommandText = "SELECT hora FROM Citas WHERE CONVERT(date, fecha) = '" + fecha + "' AND estado = 'P'";
-
-            SqlDataReader lector = comando.ExecuteReader();
-
-            while (lector.Read())
-            {
-                cboHora.Items.Add(lector["hora"].ToString());
-            }
-
-            lector.Close();
-            conexion.Close();
-       
+          
         }
 
-        private void cboHora_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dgvDatos.Rows.Clear();
-
-            string fecha = dtpFecha.Value.ToString("yyyy-MM-dd");
-            string hora = cboHora.Text;
-
-            conexion.Open();
-            comando = conexion.CreateCommand();
-
-            comando.CommandText = "SELECT C.idCita, Co.idCobro, P.Nombre, P.ApellidoPaterno + ' ' + P.ApellidoMaterno, P.Telefono, C.hora " +
-                                  "FROM Citas C " +
-                                  "INNER JOIN Paciente P ON C.idPaciente = P.idPaciente " +
-                                  "INNER JOIN Cobros Co ON C.idCita = Co.idCita " +
-                                  "WHERE CONVERT(date, C.fecha) = '" + fecha + "' AND C.hora = '" + hora + "' AND C.estado = 'P'";
-
-            SqlDataReader lector = comando.ExecuteReader();
-
-            while (lector.Read())
-            {
-                dgvDatos.Rows.Add(
-                    lector.GetValue(0),
-                    lector.GetValue(1),
-                    lector.GetValue(2),
-                    lector.GetValue(3),
-                    lector.GetValue(4),
-                    lector.GetValue(5)
-                );
-            }
-
-            lector.Close();
-            conexion.Close();
-            cboNombreCliente.Enabled = true;
-        }
+   
 
         private void FACTURAS_Load(object sender, EventArgs e)
         {
@@ -92,7 +40,7 @@ namespace ConsultorioMedico
 
             while (lector.Read())
             {
-                cboNombreCliente.Items.Add(lector["nombreContri"].ToString());
+                cboNombreCliente.Items.Add(lector[0].ToString());
             }
 
             lector.Close();
@@ -124,7 +72,7 @@ namespace ConsultorioMedico
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-            if (dgvDatos.CurrentRow == null)
+            if (cboCita.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, seleccione una cita a facturar.");
                 return;
@@ -137,10 +85,17 @@ namespace ConsultorioMedico
             }
 
             string idCliente = txtIdCliente.Text;
-            string idCita = dgvDatos.CurrentRow.Cells[0].Value.ToString();
-            string idCobro = dgvDatos.CurrentRow.Cells[1].Value.ToString();
+            string idCita = cboCita.SelectedItem.ToString();
+            string idCobro = "";
+
+
+        
 
             conexion.Open();
+
+            comando.CommandText = "SELECT idCobro FROM Cobros WHERE idCita = " + idCita;
+            idCobro = comando.ExecuteScalar().ToString();
+
             comando = conexion.CreateCommand();
 
             comando.CommandText = "INSERT INTO Factura (idCobros, idCliente) VALUES (" + idCobro + ", " + idCliente + ")";
@@ -159,20 +114,67 @@ namespace ConsultorioMedico
             txtDomFis.Clear();
             txtEmail.Clear();
             dgvDatos.Rows.Clear();
-            cboHora.Items.Clear();
-            cboHora.Text = "";
-            cboHora.Enabled = false;
+          
             cboNombreCliente.Enabled = false;
+            cboCita.SelectedIndex = -1;
+            cboCita.Items.Clear();
+            cboCita.Enabled = false;
+           
             dtpFecha.Enabled = false;
             cmdGrabar.Enabled = false;
+            cmdBuscar.Enabled = false;
             cmdNuevo.Enabled = true;
         }
 
         private void cmdNuevo_Click(object sender, EventArgs e)
         {
             dtpFecha.Enabled = true;
-            cmdGrabar.Enabled = true;
             cmdNuevo.Enabled = false;
+            cmdBuscar.Enabled = true;
+
+        }
+
+        private void cmdSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cmdBuscar_Click(object sender, EventArgs e)
+        {
+            dgvDatos.Rows.Clear();
+            cboCita.Items.Clear();
+
+            string fecha = dtpFecha.Value.ToString("yyyy-MM-dd");
+
+            conexion.Open();
+            comando = conexion.CreateCommand();
+
+            comando.CommandText = "SELECT C.idCita, Co.idCobro, P.Nombre, P.ApellidoPaterno + ' ' + P.ApellidoMaterno, P.Telefono, C.hora " +
+                                  "FROM Citas C " +
+                                  "INNER JOIN Paciente P ON C.idPaciente = P.idPaciente " +
+                                  "INNER JOIN Cobros Co ON C.idCita = Co.idCita " +
+                                  "WHERE CONVERT(date, C.fecha) = '" + fecha + "' AND C.estado = 'P'";
+
+            SqlDataReader lector = comando.ExecuteReader();
+
+            while (lector.Read())
+            {
+                dgvDatos.Rows.Add(
+                    lector.GetValue(0),
+                    lector.GetValue(1),
+                    lector.GetValue(2),
+                    lector.GetValue(3),
+                    lector.GetValue(4),
+                    lector.GetValue(5)
+                );
+                cboCita.Items.Add(lector.GetValue(0));
+            }
+
+            lector.Close();
+            conexion.Close();
+            cboNombreCliente.Enabled = true;
+            cboCita.Enabled = true;
+            cmdGrabar.Enabled = true;
         }
     }
     }

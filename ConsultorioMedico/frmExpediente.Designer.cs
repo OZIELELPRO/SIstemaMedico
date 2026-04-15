@@ -325,6 +325,7 @@
             this.cmdSalir.TabIndex = 62;
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = false;
+            this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
             // cmdAtender
             // 

@@ -40,6 +40,10 @@
             this.rECETASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOBROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTACOBROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTASFACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +53,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cATALOGOSToolStripMenuItem,
-            this.mOVIMIENTOSToolStripMenuItem});
+            this.mOVIMIENTOSToolStripMenuItem,
+            this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(975, 33);
@@ -134,6 +139,37 @@
             this.fACTURASToolStripMenuItem.Text = "FACTURAS";
             this.fACTURASToolStripMenuItem.Click += new System.EventHandler(this.fACTURASToolStripMenuItem_Click);
             // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultasToolStripMenuItem1,
+            this.cONSULTACOBROSToolStripMenuItem,
+            this.cONSULTASFACTURASToolStripMenuItem});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
+            this.consultasToolStripMenuItem.Text = "CONSULTAS";
+            // 
+            // consultasToolStripMenuItem1
+            // 
+            this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(301, 34);
+            this.consultasToolStripMenuItem1.Text = "CONSULTAS RECETAS";
+            this.consultasToolStripMenuItem1.Click += new System.EventHandler(this.consultasToolStripMenuItem1_Click);
+            // 
+            // cONSULTACOBROSToolStripMenuItem
+            // 
+            this.cONSULTACOBROSToolStripMenuItem.Name = "cONSULTACOBROSToolStripMenuItem";
+            this.cONSULTACOBROSToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
+            this.cONSULTACOBROSToolStripMenuItem.Text = "CONSULTA COBROS";
+            this.cONSULTACOBROSToolStripMenuItem.Click += new System.EventHandler(this.cONSULTACOBROSToolStripMenuItem_Click);
+            // 
+            // cONSULTASFACTURASToolStripMenuItem
+            // 
+            this.cONSULTASFACTURASToolStripMenuItem.Name = "cONSULTASFACTURASToolStripMenuItem";
+            this.cONSULTASFACTURASToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
+            this.cONSULTASFACTURASToolStripMenuItem.Text = "CONSULTAS FACTURAS";
+            this.cONSULTASFACTURASToolStripMenuItem.Click += new System.EventHandler(this.cONSULTASFACTURASToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -168,6 +204,10 @@
         private System.Windows.Forms.ToolStripMenuItem rECETASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cOBROSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fACTURASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTACOBROSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTASFACTURASToolStripMenuItem;
     }
 }
 
