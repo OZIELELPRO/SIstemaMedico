@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.SqlServer.Types;
 
 namespace ConsultorioMedico
 {
@@ -14,6 +15,8 @@ namespace ConsultorioMedico
         [STAThread]
         static void Main()
         {
+            // Verifica que la biblioteca Microsoft.SqlServer.Types esté correctamente instalada en tu proyecto.
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMenu());

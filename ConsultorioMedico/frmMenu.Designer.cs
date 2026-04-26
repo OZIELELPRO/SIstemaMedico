@@ -44,6 +44,8 @@
             this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTACOBROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTASFACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTESVARIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +56,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cATALOGOSToolStripMenuItem,
             this.mOVIMIENTOSToolStripMenuItem,
-            this.consultasToolStripMenuItem});
+            this.consultasToolStripMenuItem,
+            this.rEPORTESToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(975, 33);
@@ -170,6 +173,21 @@
             this.cONSULTASFACTURASToolStripMenuItem.Text = "CONSULTAS FACTURAS";
             this.cONSULTASFACTURASToolStripMenuItem.Click += new System.EventHandler(this.cONSULTASFACTURASToolStripMenuItem_Click);
             // 
+            // rEPORTESToolStripMenuItem
+            // 
+            this.rEPORTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rEPORTESVARIOSToolStripMenuItem});
+            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(110, 29);
+            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
+            // 
+            // rEPORTESVARIOSToolStripMenuItem
+            // 
+            this.rEPORTESVARIOSToolStripMenuItem.Name = "rEPORTESVARIOSToolStripMenuItem";
+            this.rEPORTESVARIOSToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.rEPORTESVARIOSToolStripMenuItem.Text = "REPORTES VARIOS";
+            this.rEPORTESVARIOSToolStripMenuItem.Click += new System.EventHandler(this.rEPORTESVARIOSToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -208,6 +226,8 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cONSULTACOBROSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONSULTASFACTURASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEPORTESVARIOSToolStripMenuItem;
     }
 }
 

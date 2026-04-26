@@ -95,5 +95,11 @@ namespace ConsultorioMedico
             frmConsultaFacturas frmConsultaFacturas = new frmConsultaFacturas();
             frmConsultaFacturas.Show();
         }
+
+        private void rEPORTESVARIOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReportesVarios frmReportesVarios = new frmReportesVarios();
+            frmReportesVarios.Show();
+        }
     }
 }

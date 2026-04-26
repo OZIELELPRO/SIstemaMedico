@@ -46,14 +46,14 @@ namespace ConsultorioMedico
             conexion.Open();
             comando = conexion.CreateCommand();
 
-            comando.CommandText = "SELECT F.idFactura, Co.idCobro, C.idCita, P.Nombre, C.fecha, C.hora, Cl.nombreContri, Co.monto " +
+            string r = "SELECT F.idFactura, Co.idCobro, C.idCita, P.Nombre, C.fecha, C.hora, Cl.nombreContri, Co.monto " +
                                   "FROM Factura F " +
                                   "INNER JOIN Cobros Co ON F.idCobros = Co.idCobro " +
                                   "INNER JOIN Citas C ON Co.idCita = C.idCita " +
                                   "INNER JOIN Paciente P ON C.idPaciente = P.idPaciente " +
                                   "INNER JOIN Cliente Cl ON F.idCliente = Cl.idCliente " +
                                   "WHERE F.idFactura = " + txtId.Text;
-
+            comando.CommandText = r;
             SqlDataReader lector = comando.ExecuteReader();
 
             if (lector.HasRows)
